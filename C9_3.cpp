@@ -50,13 +50,13 @@ bool GetTop(SqStack S, int &x){
 
 }
 //链式存储结构栈
- typedef struct StackNode
+ typedef struct StackNode //栈结构
 {
 	int data;
 	struct StackNode *next;
 }StackNode;
 
-typedef struct LinkStack
+typedef struct LinkStack //链式结构
 {
 	StackNode *top;
 	int count;
