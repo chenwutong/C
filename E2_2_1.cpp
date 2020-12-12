@@ -4,18 +4,18 @@
 
 typedef struct
 {
-    int data[MAXSIZE]; //´æ´¢Ë³Ğò±íÖĞµÄÔªËØ
-    int length;        //Ë³Ğò±íÖĞº¬ÓĞµÄÔªËØ¸öÊı
+    int data[MAXSIZE]; //ï¿½æ´¢Ë³ï¿½ï¿½ï¿½ï¿½Ğµï¿½Ôªï¿½ï¿½
+    int length;        //Ë³ï¿½ï¿½ï¿½ï¿½Ğºï¿½ï¿½Ğµï¿½Ôªï¿½Ø¸ï¿½ï¿½ï¿½
 } sqlist;
 void creat(sqlist &L)
 {
     int a;
-    printf("ÇëÊäÈëÒª´´½¨µÄÔªËØµÄ¸öÊı:\t");
+    printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ØµÄ¸ï¿½ï¿½ï¿½:\t");
     scanf("%d", &a);
     for (int i = 0; i < a; i++)
 
     {
-        printf("ÇëÊäÈëµÚ%d¸öÔªËØ\t", i + 1);
+        printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½%dï¿½ï¿½Ôªï¿½ï¿½\t", i + 1);
         scanf("%d", &L.data[i]);
         L.length++;
         
@@ -25,7 +25,7 @@ void creat(sqlist &L)
 void show(sqlist L)
 {
     int i;
-    printf("ÏßĞÔ±íÖĞµÄÔªËØÎª:\n");
+    printf("ï¿½ï¿½ï¿½Ô±ï¿½ï¿½Ğµï¿½Ôªï¿½ï¿½Îª:\n");
     for (i = 0; i < L.length; i++)
         printf("%d\t", L.data[i]);
     printf("\n");
@@ -34,10 +34,10 @@ void min_del(sqlist &L){
  
     int min,log=0;
     if(L.length ==0){
-        printf("³ö´í");
+        printf("ï¿½ï¿½ï¿½ï¿½");
     }
     min = L.data[0];
-    for(int i=0;i<L.length;i++){//L.data Ê¹ÓÃµÄÊÇÊı×éÏÂ±ê Ö»ÓĞ¸öÊı¼õÒ»¸ö
+    for(int i=0;i<L.length;i++){//L.data Ê¹ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â±ï¿½ Ö»ï¿½Ğ¸ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
         printf("%d",i);
         if(min>L.data[i]){
             min=L.data[i];
